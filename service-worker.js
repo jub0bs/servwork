@@ -1,7 +1,7 @@
 self.addEventListener("fetch", (event) => {
   const url = new URL(event.request.url);
 
-  if (url.pathname === "/foobar") {
+  if (url.pathname === "/servwork/foobar") {
     event.respondWith(
       new Response("hello world", {
         headers: {
